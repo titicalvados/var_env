@@ -28,7 +28,7 @@ jobs:
           echo "let's start init"
           git init
           echo "init done"
-          git branch -m "master"
+          git branch -m "main"
           git status
           echo $GITHUB_ACTOR
           echo ${{ secrets.GITHUB_TOKEN }}
@@ -41,7 +41,7 @@ jobs:
           git status
           echo "avant checkout main"
           #git checkout main
-          git branch --set-upstream-to=origin/master
+          git branch --set-upstream-to=origin/main
           git pull
           echo "après git pull"
           pytest >> log_pytest.txt
