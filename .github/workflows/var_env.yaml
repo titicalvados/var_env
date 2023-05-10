@@ -30,7 +30,7 @@ jobs:
           echo "init done"
           git status
           echo "avant git branch"
-          git branch -m "main"
+          #git branch -m "main"
           git status
           echo $GITHUB_ACTOR
           echo ${{ secrets.GITHUB_TOKEN }}
@@ -42,7 +42,7 @@ jobs:
           git fetch
           git status
           echo "avant checkout main"
-          git checkout main
+          #git checkout main
           #git branch --set-upstream-to=origin/main
           echo "avant git pull"
           git pull
