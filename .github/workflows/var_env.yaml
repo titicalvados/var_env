@@ -41,7 +41,7 @@ jobs:
           git status
           echo "avant checkout main"
           #git checkout main
-          #git branch --set-upstream-to=origin/main
+          git branch --set-upstream-to=origin/master
           git pull
           echo "après git pull"
           pytest >> log_pytest.txt
