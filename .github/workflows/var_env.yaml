@@ -42,7 +42,7 @@ jobs:
           git fetch
           git status
           echo "avant branch test"
-          git branch "test"
+          git branch test
           echo "avant checkout test"
           git checkout test
           echo "avant git branch"
