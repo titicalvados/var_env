@@ -40,7 +40,7 @@ jobs:
           git fetch
           git status
           echo "avant checkout main"
-          #git checkout main
+          git checkout main
           git branch --set-upstream-to=origin/main
           git pull
           echo "après git pull"
