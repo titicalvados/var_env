@@ -28,6 +28,8 @@ jobs:
           echo "let's start init"
           git init
           echo "init done"
+          git status
+          echo "avant git branch"
           git branch -m "main"
           git status
           echo $GITHUB_ACTOR
@@ -41,7 +43,8 @@ jobs:
           git status
           echo "avant checkout main"
           git checkout main
-          git branch --set-upstream-to=origin/main
+          #git branch --set-upstream-to=origin/main
+          echo "avant git pull"
           git pull
           echo "après git pull"
           pytest >> log_pytest.txt
