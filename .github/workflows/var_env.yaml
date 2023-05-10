@@ -29,6 +29,7 @@ jobs:
           git init
           echo "init done"
           git branch -m "master"
+          git status
           echo $GITHUB_ACTOR
           echo ${{ secrets.GITHUB_TOKEN }}
           echo $GITHUB_REPOSITORY
@@ -37,9 +38,10 @@ jobs:
           git config --global user.email "thierry.morel25@orange.fr"
           git config --global user.name "titicalvados"
           git fetch
+          git status
           echo "avant checkout main"
-          git checkout main
-          git branch --set-upstream-to=origin/main
+          #git checkout main
+          #git branch --set-upstream-to=origin/main
           git pull
           pytest >> log_pytest.txt
           ls -a
