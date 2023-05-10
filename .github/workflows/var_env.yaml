@@ -37,6 +37,7 @@ jobs:
           git config --global user.email "thierry.morel25@orange.fr"
           git config --global user.name "titicalvados"
           git fetch
+          echo "avant checkout main"
           git checkout main
           git branch --set-upstream-to=origin/main
           git pull
